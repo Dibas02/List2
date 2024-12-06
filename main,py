@@ -1,0 +1,17 @@
+
+
+def fun_list(words):
+    ctr = 0
+    lst = []
+
+    for word in words:
+        if len(word) >1 and word[0] == word[-1]:
+            ctr += 1
+            lst.append(word)
+
+    return ctr
+
+
+lst = ["aba", "xyx", "cfc", "wxyzabc"]
+
+print(fun_list(lst))
